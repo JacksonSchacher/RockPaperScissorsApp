@@ -9,24 +9,47 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main container-fluid>
-        <div class="card bg-dark text-white">
-            <img class="card-img" src="..." alt="card background">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text">Last updated 3 mins ago</p>
+    <main class="container-fluid width-70">
+        <div class="row justify-content-center">
+            <div class="card text-dark text-center mt-4">
+                <img class="card-img img-fluid bg-gif-img" src="/assets/bg-streaks.gif" alt="card background">
+                <div class="col card-img-overlay">
+                    <h1 class="card-title">BATTLE!</h1>
+                    <div class="row justify-content-center">
+                        <!-- icon overlay for player -->
+                        <div class="col-sm-4 battle-icon" id="player-icon"></div>
+                        <div class="col-sm-4 align-self-center versus">
+                            <h2>-VS-</h2>
+                        </div>
+                        <!-- icon overlay for computer -->
+                        <div class="col-sm-4 battle-icon" id="computer-icon"></div>
+                    </div>
+                    <div id="outcome" class="row bottom">
+                        <h1>You Win!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-around mt-2">
+            <div class="col-lg-4 text-center">
+                <button onclick="setPlayerChoice()" id="0" type="button" class="btn text-dark btn-lg"><i class="mdi mdi-diamond-stone mdi-48px"></i><h2>ROCK</h2></button>
+            </div>
+            <div class="col-lg-4 text-center">
+                <button onclick="setPlayerChoice()" id="1" type="button" class="btn text-dark btn-lg"><i class="mdi mdi-file-outline mdi-48px"></i><h2>PAPER</h2></button>
+            </div>
+            <div class="col-lg-4 text-center">
+                <button onclick="setPlayerChoice()" id="2" type="button" class="btn text-dark btn-lg choice-btn"><i class="mdi mdi-content-cut mdi-48px"></i><h2>SCISSORS</h2></button>
             </div>
         </div>
     </main>
-    <i class="mdi mdi-diamond-stone"></i>
-    <i class="mdi mdi-file-outline"></i>
-    <i class="mdi mdi-content-cut"></i>
-
-
     <script src='app/app.js'></script>
 </body>
 

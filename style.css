@@ -1,0 +1,42 @@
+body {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.width-70 {
+    width: 70vw;
+}
+
+.card {
+    border: none;
+}
+
+.bg-gif-img {
+    background-size: cover;
+    background-position: center;
+}
+
+.btn {
+    width: 12rem;
+}
+
+.battle-icon {
+    position: relative;
+    top: .5rem;
+    margin: 0 -5rem;
+}
+
+.versus {
+    position: relative;
+    color: crimson;
+}
+
+.large-icon {
+    font-size: 15rem;
+    text-shadow: 0 5px 15px rgb(161, 161, 161);
+}
+
+#outcome {
+    position: relative;
+    bottom: -22.5rem;
+    color: crimson;
+}

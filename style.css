@@ -22,11 +22,11 @@ body {
 .battle-icon {
     position: relative;
     top: .5rem;
-    margin: 0 -5rem;
+    margin: 1rem;
 }
 
 .versus {
-    position: relative;
+    position: absolute;
     color: crimson;
 }
 
@@ -35,8 +35,7 @@ body {
     text-shadow: 0 5px 15px rgb(161, 161, 161);
 }
 
-#outcome {
-    position: relative;
-    bottom: -22.5rem;
+.bottom {
+    bottom: .5rem;
     color: crimson;
 }
